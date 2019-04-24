@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="7" name="pytest" skips="0" tests="7" time="0.118"><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="5" name="test_game_dict" time="0.001291036605834961"><failure message="KeyError: &apos;home&apos;">self = &lt;index_test.TestDictionaryBall testMethod=test_game_dict&gt;
+
+    def test_game_dict(self):
+        self.assertEqual(type(game_dict()), type({}), &quot;Return value must be a dictionary&quot;)
+&gt;       self.assertEqual(type(game_dict()[&apos;home&apos;]), type({}), &quot;Return value must be a dictionary&quot;)
+E       KeyError: &apos;home&apos;
+
+test/index_test.py:8: KeyError</failure></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="13" name="test_num_points_scored" time="0.0008389949798583984"><failure message="TypeError: num_points_scored() takes 0 positional arguments but 1 was given">self = &lt;index_test.TestDictionaryBall testMethod=test_num_points_scored&gt;
+
+    def test_num_points_scored(self):
+&gt;       self.assertEqual(type(num_points_scored(&apos;Mason Plumlee&apos;)), type(26), &quot;Return value must be an integer&quot;)
+E       TypeError: num_points_scored() takes 0 positional arguments but 1 was given
+
+test/index_test.py:15: TypeError</failure></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="29" name="test_player_numbers" time="0.0010111331939697266"><failure message="TypeError: player_numbers() takes 0 positional arguments but 1 was given">self = &lt;index_test.TestDictionaryBall testMethod=test_player_numbers&gt;
+
+    def test_player_numbers(self):
+&gt;       self.assertEqual(type(player_numbers(&quot;Charlotte Hornets&quot;)), type([]), &quot;Return value must be a list&quot;)
+E       TypeError: player_numbers() takes 0 positional arguments but 1 was given
+
+test/index_test.py:31: TypeError</failure></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="33" name="test_player_stats" time="0.0009763240814208984"><failure message="TypeError: player_stats() takes 0 positional arguments but 1 was given">self = &lt;index_test.TestDictionaryBall testMethod=test_player_stats&gt;
+
+    def test_player_stats(self):
+&gt;       self.assertEqual(type(player_stats(&apos;Mason Plumlee&apos;)), type({}), &quot;Return value must be a dictionary&quot;)
+E       TypeError: player_stats() takes 0 positional arguments but 1 was given
+
+test/index_test.py:35: TypeError</failure></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="17" name="test_shoe_size" time="0.0011851787567138672"><failure message="TypeError: shoe_size() takes 0 positional arguments but 1 was given">self = &lt;index_test.TestDictionaryBall testMethod=test_shoe_size&gt;
+
+    def test_shoe_size(self):
+&gt;       self.assertEqual(type(shoe_size(&apos;Mason Plumlee&apos;)), type(19), &quot;Return value must be an integer&quot;)
+E       TypeError: shoe_size() takes 0 positional arguments but 1 was given
+
+test/index_test.py:19: TypeError</failure></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="21" name="test_team_colors" time="0.001186370849609375"><failure message="TypeError: team_colors() takes 0 positional arguments but 1 was given">self = &lt;index_test.TestDictionaryBall testMethod=test_team_colors&gt;
+
+    def test_team_colors(self):
+&gt;       self.assertEqual(type(team_colors(&apos;Brooklyn Nets&apos;)), type([]), &quot;Return value must be a list&quot;)
+E       TypeError: team_colors() takes 0 positional arguments but 1 was given
+
+test/index_test.py:23: TypeError</failure></testcase><testcase classname="test.index_test.TestDictionaryBall" file="test/index_test.py" line="25" name="test_team_names" time="0.0008761882781982422"><failure message="AssertionError: &lt;class &apos;NoneType&apos;&gt; != &lt;class &apos;list&apos;&gt; : Return value must be a list">self = &lt;index_test.TestDictionaryBall testMethod=test_team_names&gt;
+
+    def test_team_names(self):
+&gt;       self.assertEqual(type(team_names()), type([]), &quot;Return value must be a list&quot;)
+E       AssertionError: &lt;class &apos;NoneType&apos;&gt; != &lt;class &apos;list&apos;&gt; : Return value must be a list
+
+test/index_test.py:27: AssertionError</failure></testcase></testsuite>
